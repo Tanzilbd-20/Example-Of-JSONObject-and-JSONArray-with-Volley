@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 //here in logcat will show first 500 characters of the response string.
-                Log.d("Main", "onResponse: " + response.substring(0, 10));
+                Log.d("Main", "onResponse: " + response.substring(0, 500));
                 String result = response.substring(0,10);
                 id_tv.setText(result);
             }
